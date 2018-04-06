@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="demo2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img-top-background" translatesAutoresizingMaskIntoConstraints="NO" id="lS6-K5-Srk">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="337"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="500" verticalCompressionResistancePriority="500" image="img-profile" translatesAutoresizingMaskIntoConstraints="NO" id="pLt-kG-g4l">
+                                <rect key="frame" x="137.5" y="287" width="100" height="100"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icn-facebook" translatesAutoresizingMaskIntoConstraints="NO" id="Te1-e8-PWF">
+                                <rect key="frame" x="106.5" y="595" width="42" height="42"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icn-twitter" translatesAutoresizingMaskIntoConstraints="NO" id="x8N-fV-rN9">
+                                <rect key="frame" x="226.5" y="595" width="42" height="42"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Walter White" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fk8-Qg-GgC">
+                                <rect key="frame" x="138" y="392" width="98.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="About Me" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" enabled="NO" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g9u-hg-uXj">
+                                <rect key="frame" x="150" y="433" width="74.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="IEQ-Ed-aHs">
+                                <rect key="frame" x="0.0" y="459" width="374" height="116"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icn-switch" translatesAutoresizingMaskIntoConstraints="NO" id="hgk-ll-CJi">
+                                <rect key="frame" x="288.5" y="34.5" width="48" height="48"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="hgk-ll-CJi" firstAttribute="centerX" secondItem="lS6-K5-Srk" secondAttribute="centerX" constant="125" id="0aZ-wj-KGp"/>
+                            <constraint firstItem="IEQ-Ed-aHs" firstAttribute="top" secondItem="g9u-hg-uXj" secondAttribute="bottom" constant="5" id="4fL-Pz-Apk"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Te1-e8-PWF" secondAttribute="bottom" constant="30" id="Bs6-3g-dYr"/>
+                            <constraint firstItem="x8N-fV-rN9" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" constant="60" id="ES0-cm-ER7"/>
+                            <constraint firstItem="fk8-Qg-GgC" firstAttribute="centerX" secondItem="pLt-kG-g4l" secondAttribute="centerX" id="HOk-tD-sDJ"/>
+                            <constraint firstItem="pLt-kG-g4l" firstAttribute="centerY" secondItem="lS6-K5-Srk" secondAttribute="bottom" id="JpL-yn-OoK"/>
+                            <constraint firstItem="Te1-e8-PWF" firstAttribute="top" secondItem="IEQ-Ed-aHs" secondAttribute="bottom" constant="20" id="L9x-wZ-NVW"/>
+                            <constraint firstItem="lS6-K5-Srk" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="PDd-Hs-3qg"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="x8N-fV-rN9" secondAttribute="bottom" constant="30" id="S7a-Oi-8wg"/>
+                            <constraint firstItem="lS6-K5-Srk" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="SXL-2c-4T0"/>
+                            <constraint firstItem="Te1-e8-PWF" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" constant="-60" id="V4P-ve-lCk"/>
+                            <constraint firstItem="g9u-hg-uXj" firstAttribute="top" secondItem="fk8-Qg-GgC" secondAttribute="bottom" constant="20" id="YbH-kb-96C"/>
+                            <constraint firstItem="lS6-K5-Srk" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="ZLm-9D-Ixg"/>
+                            <constraint firstItem="g9u-hg-uXj" firstAttribute="centerX" secondItem="fk8-Qg-GgC" secondAttribute="centerX" id="elf-24-Ops"/>
+                            <constraint firstItem="IEQ-Ed-aHs" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="fOF-n8-cUe"/>
+                            <constraint firstItem="fk8-Qg-GgC" firstAttribute="top" secondItem="pLt-kG-g4l" secondAttribute="bottom" constant="5" id="fPm-Ah-0Rf"/>
+                            <constraint firstItem="hgk-ll-CJi" firstAttribute="centerY" secondItem="lS6-K5-Srk" secondAttribute="centerY" constant="-110" id="j8r-8K-N2R"/>
+                            <constraint firstItem="IEQ-Ed-aHs" firstAttribute="centerX" secondItem="g9u-hg-uXj" secondAttribute="centerX" id="pjk-0i-a93"/>
+                            <constraint firstItem="lS6-K5-Srk" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="tz5-GQ-0HQ"/>
+                            <constraint firstItem="pLt-kG-g4l" firstAttribute="centerX" secondItem="lS6-K5-Srk" secondAttribute="centerX" id="vU1-1L-g4y"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="imgProfile" destination="pLt-kG-g4l" id="J0G-6s-gK3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="icn-facebook" width="42" height="42"/>
+        <image name="icn-switch" width="48" height="48"/>
+        <image name="icn-twitter" width="42" height="42"/>
+        <image name="img-profile" width="100" height="100"/>
+        <image name="img-top-background" width="600" height="337"/>
+    </resources>
+</document>
